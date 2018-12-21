@@ -1,1 +1,21 @@
 paper/_minted-paper
+# for tex
+auto/
+*.aux
+*.idx
+*.out
+*.blg
+*.dvi
+*.bbl
+
+paper/_minted-_region_/
+paper/_region_.prv/
+paper/_region_.tex
+paper/paper.bbl.toc
+paper/content.tex
+
+# Logs and databases #
+######################
+*.log
+
+
