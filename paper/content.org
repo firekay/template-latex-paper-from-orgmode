@@ -131,9 +131,9 @@ Figure \ref{fig:code-example1} shows some code.
 
 #+LATEX: If necessary, we can use the \verb|#+LATEX:| directive, to send a string directly to LaTeX, i.e. unmodified by orgmode.
 
-#+BEGIN_LATEX
+#+BEGIN_EXPORT latex
 We can also create a literal \LaTeX{} block like this one.\footnote{See \href{http://orgmode.org/manual/Quoting-LaTeX-code.html}{http://orgmode.org/manual/Quoting-LaTeX-code.html} for more details}.
-#+END_LATEX
+#+END_EXPORT
 
 ** More results
 
@@ -159,14 +159,17 @@ script that executes the conversion of orgmode files to LaTeX. Thanks
 also to Maximilian Albert, who helped tidying up the Makefile.
 \newpage
 * TODO
+测试
+
 Sometimes, a section with things to do is useful; with the understanding that this is completed and removed before the document is finished. (Or changed into a COMMENT section, so that it doesn't export to latex.)
 
 An orgmode todo list (which can be nested) looks like this
 
-- TODO [2/3]
-  - [X] create github repository
-  - [X] write up the setup for this document
-  - [ ] Save planet [0/3]
-    - [ ] understand challenge
-    - [ ] find solution
-    - [ ] implement it
+  - TODO [2/3]
+    - [X] create github repository
+    - [X] write up the setup for this document
+    - [-] Save planet [2/4]
+      - [X] understand challenge
+      - [X] find solution
+      - [ ] implement it
+      - [ ]

@@ -1,15 +1,13 @@
 
 paper.pdf: paper.tex content.tex paper.bib
-	pdflatex -shell-escape paper.tex
+	xelatex -shell-escape paper.tex
 	bibtex paper
-	pdflatex -shell-escape paper.tex
-	pdflatex -shell-escape paper.tex
+	xelatex -shell-escape paper.tex
 
 force: content.tex
-	pdflatex -shell-escape paper.tex
+	xelatex -shell-escape paper.tex
 	bibtex paper
-	pdflatex -shell-escape paper.tex
-	pdflatex -shell-escape paper.tex
+	xelatex -shell-escape paper.tex
 
 
 content.tex: content.org extract_body.py code/*
