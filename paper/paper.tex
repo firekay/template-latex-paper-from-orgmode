@@ -8,7 +8,10 @@
 % Document class
 %****************
 %\documentclass[UTF8]{article}
+% English
 \documentclass{article}
+% Chinese
+% \documentclass{ctexart}
 
 %****************
 % Packages, etc.
@@ -28,6 +31,7 @@
 % Packages
 %**********
 \usepackage{amsmath,amsfonts,amssymb,hyperref,multirow}
+\usepackage{algorithm}
 %\usepackage[noend]{algpseudocode}
 \usepackage{algpseudocode}
 \usepackage{xcolor}
@@ -54,6 +58,24 @@
 % only required for underlining text
 \usepackage[normalem]{ulem}
 
+% \usepackage{fancyhdr}
+% \pagestyle{fancy}
+% \setlength{\headheight}{13pt}
+% \renewcommand{\headrulewidth}{0.4pt}
+% \renewcommand{\footrulewidth}{0.4pt}
+% \fancyhead[LE,RO]{Machine Learning Optimizition}
+% \fancyhead[LE,LO]{\thepage}
+% \fancyfoot[CE,CO]{\leftmark}
+% \fancyfoot[LE,RO]{\thepage\ of \pageref{LastPage}}
+% \usepackage{makeidx}
+% \usepackage[colorlinks,
+%             linkcolor=red,
+%             anchorcolor=blue,
+%             citecolor=green,
+%             CJKbookmarks
+%             ]{}
+\usepackage[center]{titlesec}
+
 % often use this in differential operators:
 \renewcommand{\d}{\ensuremath{\mathrm{d}}}
 
@@ -79,7 +101,8 @@
 %*******
 % Title
 %*******
-\title{\sffamily \textbf{Title -- template for orgmode latex production}}
+% TODO: Add Title
+\title{\sffamily \textbf{Title}}
 
 %*********
 % Authors
@@ -99,35 +122,25 @@
 %**********
 % Abstract
 %**********
+% TODO: Add abstract
 \begin{abstract}
-  This is an abstract abstract, in the sense of only providing a
-  virtual abstract, also known as the interface. Somebody will have to
-  provide an inherited class that provides the real abstract.
-
-  We have placed the abstract in the paper.tex file, so that all the
-  content in the orgmode file \texttt{content.org} is organised into
-  sections, and they can be unfolded, re-arranged, etc (the abstract
-  doesn't go well into a section because it appears even before the
-  first section starts). If you prefer, you can move the abstract
-  latex definition as is into the \texttt{content.org} file, and all
-  will work as before.
 \end{abstract}
 
 \ifthenelse{\preprint = 0}{
 
-%**********
-% Keywords
-%**********
-\begin{keywords}
-    TODO: Add Keywords
-\end{keywords}
+  %**********
+  % Keywords
+  %**********
+  \begin{keywords}
+      TODO: Add Keywords
+  \end{keywords}
 
-%*****
-% AMS
-%*****
-\begin{AMS}
-  65K05, 68Q25, 68T05, 90C06, 90C30, 90C90
-\end{AMS}
+  %*****
+  % AMS
+  %*****
+  \begin{AMS}
+    TODO: AMS - 65K05, 68Q25, 68T05, 90C06, 90C30, 90C90
+  \end{AMS}
 
 }{}
 
