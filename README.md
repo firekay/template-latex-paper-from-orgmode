@@ -15,3 +15,9 @@ Requirements: A recent Emacs (tested on Emacs 24.5), Python, make, pdflatex.
 We have committed this file for convenience to the repository, and it can be seen [here](compiled-paper.pdf).
 
 Author: Hans Fangohr, University of Southampton
+
+## Need to modify (for paper -> org latex)
+- ``paper.tex`` => Modify TODO
+- ``paper.tex`` => Rename ``paper.tex`` to ``<FileName>.tex``
+- ``MakeFile `` => Replace ``paper`` with ``<FileName>``
+- ``paper.bib`` => Rename ``paper.bib`` to ``<FileName>.bib``
