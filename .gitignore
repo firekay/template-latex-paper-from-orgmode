@@ -8,6 +8,9 @@ auto/
 *.dvi
 *.bbl
 
+# for org latex
+ltximg/
+
 paper/_minted-_region_/
 paper/_region_.prv/
 paper/_region_.tex
